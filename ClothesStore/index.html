@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tienda de ropa</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tienda de ropa</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Hombres</a></li>
+        <li><a href="#">Mujeres</a></li>
+        <li><a href="#">Niños</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="destacados">
+        <h2>Productos destacados</h2>
+        <ul>
+          <li>
+            <img src="camisa.jpg" alt="Camisa">
+            <h3>Camisa</h3>
+            <p>$20</p>
+            <button class="agregar-al-carrito">Agregar al carrito</button>
+          </li>
+          <li>
+            <img src="pantalon.jpg" alt="Pantalón">
+            <h3>Pantalón</h3>
+            <p>$30</p>
+            <button class="agregar-al-carrito">Agregar al carrito</button>
+          </li>
+          <li>
+            <img src="vestido.jpg" alt="Vestido">
+            <h3>Vestido</h3>
+            <p>$40</p>
+            <button class="agregar-al-carrito">Agregar al carrito</button>
+          </li>
+        </ul>
+
+        <script>
+            // Seleccione todos los botones "Agregar al carrito"
+            const botonesAgregarAlCarrito = document.querySelectorAll('.agregar-al-carrito');
+          
+            // Agregue un controlador de eventos a cada botón
+            botonesAgregarAlCarrito.forEach(function(boton) {
+              boton.addEventListener('click', function(evento) {
+                alert('El artículo se ha agregado al carrito.');
+              });
+            });
+          </script>
+          
+      </section>
+      <section class="categorias">
+        <h2>Categorías</h2>
+        <ul>
+          <li>
+            <img src="hombre.jpg" alt="Hombres">
+            <h3>Hombres</h3>
+          </li>
+          <li>
+            <img src="mujer.jpg" alt="Mujeres">
+            <h3>Mujeres</h3>
+          </li>
+          <li>
+            <img src="niño.jpg" alt="Niños">
+            <h3>Niños</h3>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Tienda de ropa</p>
+    </footer>
+  </body>
+</html>
